@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./requestRefills.css">
+    <title>Secure health System</title>
+</head>
+
+<body>
+    <header>
+        <h1>Secure Health System</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./askQuestions.html">Ask Questions</a>
+                </li>
+                <li>
+                    <a href="../testResultsResources/seeTestResults.html">See Test Results</a>
+                </li>
+                <li>
+                    <a href="../requestRefillsResources/requestRefills.html">Request refills</a>
+                </li>
+                <li>
+                    <a href="../payBillResources/payBill.html">PayBill</a>
+                </li>
+                <li>
+                    <a href="../index.html" id="logout">Logout</a>
+                </li>
+                <script>
+                    document.getElementById("logout").onclick = function(event){
+                        if(window.confirm("Are you sure you want to logout?" ) == true){
+                            console.log("logout successful")
+                        }else{
+                            event.preventDefault()
+                        }
+                    };
+               </script>
+            </ul>
+        </nav>
+    </header>
+    <section class="title">
+        <h1 id="title">Medications</h1>
+    </section>
+    <section id="cards">
+        <a href="./Refill.html">
+            <card class = 'doctors'>
+                <img src="./4785.webp">
+                <section class="info">
+                    <p id="name">Adderall</p>
+                </section>
+            </card>
+        </a>
+        <a href="./Refill.html">
+            <card class = 'doctors'>
+                <img src="./4785.webp">
+                <section class="info">
+                    <p id="name">Xanax</p>
+                </section>
+            </card>
+        </a>
+        <a href="./Refill.html">
+            <card class = 'doctors'>
+                <img src="./4785.webp">
+                <section class="info">
+                    <p id="name">Percocet</p>
+                </section>
+            </card>
+        </a>
+    </section>
+    <script src="./requestRefills.js"></script>
+</body>
+
+</html>

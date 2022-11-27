@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./askQuestions.css">
+    <title>Secure health System</title>
+</head>
+
+<body>
+    <header>
+        <h1>Secure Health System</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./askQuestions.html">Ask Questions</a>
+                </li>
+                <li>
+                    <a href="../testResultsResources/seeTestResults.html">See Test Results</a>
+                </li>
+                <li>
+                    <a href="../requestRefillsResources/requestRefills.html">Request refills</a>
+                </li>
+                <li>
+                    <a href="../payBillResources/payBill.html">PayBill</a>
+                </li>
+                <li>
+                    <a href="../index.html" id="logout">Logout</a>
+                </li>
+                <script>
+                    document.getElementById("logout").onclick = function(event){
+                        if(window.confirm("Are you sure you want to logout?" ) == true){
+                            console.log("logout successful")
+                        }else{
+                            event.preventDefault()
+                        }
+                    };
+               </script>
+            </ul>
+        </nav>
+    </header>
+    <section class="title">
+        <h1 id="title">Doctor's, Nurses, and Staff</h1>
+    </section>
+    <section id="cards">
+        <a href="./questions.html">
+            <card class = 'doctors'>
+                <img src="./cevOQP7pzQQEvBA1fGm6T7WivAF.jpg">
+                <section class="info">
+                    <p id="name">Spongebob SquarePants</p>
+                    <p id="description">Doctor</p>
+                </section>
+            </card>
+        </a>
+        <a href="./questions.html">
+            <card class = 'doctors'>
+                <img src="./E2KJgP0VoAU1JF0.jpg">
+                <section class="info">
+                    <p id="name">Sandy Cheeks</p>
+                    <p id="description">Nurse</p>
+                </section>
+            </card>
+        </a>
+        <a href="./questions.html">
+            <card class = 'doctors'>
+                <img src="./9d3ee552b0c0e8bbdabf3371b1753859.jpg">
+                <section class="info">
+                    <p id="name">Larry</p>
+                    <p id="description">Nurse</p>
+                </section>
+            </card>
+        </a>
+        <a href="./questions.html">
+            <card class = 'doctors'>
+                <img src="./1f505b0d047fa488077eb1e394e58ec5.jpg">
+                <section class="info">
+                    <p id="name">Patrick Star</p>
+                    <p id="description">Doctor</p>
+                </section>
+            </card>
+        </a>
+        <a href="./questions.html">
+            <card class = 'doctors'>
+                <img src="./42b849ad62a0a5f27f9e92d209f6ca52--file-spongebob.jpg">
+                <section class="info">
+                    <p id="name">Squidward Tentacles</p>
+                    <p id="description">Janitor</p>
+                </section>
+            </card>
+        </a>
+        <a href="./questions.html">
+            <card class = 'doctors'>
+                <img src="./download.jpg">
+                <section class="info">
+                    <p id="name">Pearl Krabs</p>
+                    <p id="description">Doctor</p>
+                </section>
+            </card>
+        </a>
+        <a href="./questions.html">
+            <card class = 'doctors'>
+                <img src="./Mrs._Puff.svg.png">
+                <section class="info">
+                    <p id="name">Mrs.Puff</p>
+                    <p id="description">Nurse</p>
+                </section>
+            </card>
+        </a>
+        <a href="./questions.html">
+            <card class = 'doctors'>
+                <img src="./download (1).jpg">
+                <section class="info">
+                    <p id="name">Squilliam Fancyson</p>
+                    <p id="description">Nurse</p>
+                </section>
+            </card>
+        </a>
+    </section>
+    <script src="./askQuestions.js"></script>
+</body>
+
+</html>

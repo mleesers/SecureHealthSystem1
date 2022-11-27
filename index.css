@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    margin-left: 8rem;
+    font-size: 6rem;
+    color: #2a607c;
+}   
+
+.subtitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+    margin-left: 8rem;
+    font-size: 6rem;
+    color:#2a607c;
+}
+
+#brand {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+    margin-left: 8rem;
+    font-size: 1.5rem;
+    color:#2a607c
+}
+
+.flex-container {
+    margin-top: 7rem;
+    display:flex;
+    display: inline-flex;
+}
+
+#flex2 {
+    background-color: rgb(236, 235, 236);
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem 4rem 3rem 4rem;
+    border: 1px solid grey;
+    border-radius: 3px;
+    text-align:center;
+}
+#flex3{
+    background-color: rgb(236, 235, 236);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    padding: 3rem 4rem 3rem 4rem;
+    border: 1px solid grey;
+    border-radius: 3px;
+    text-align:center;
+}
+.form-control{
+    color:black;
+}
+#flexmain{
+    background-color:#2a607c;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem 1rem 3rem 1rem;
+    border: 1px solid grey;
+    border-radius: 3px;
+    text-align:center;
+}
+
+
+.col-auto {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 1rem;
+}
+
+
+::placeholder {
+    color:black;
+    opacity: 75%;
+}
+
+
+#login{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+input{
+    padding:5px;
+}
+#password-login{
+    margin-bottom: 1rem;
+}
+.wrong{
+    color:#ffffff;
+    display:none;
+}
