@@ -11,7 +11,7 @@
 //     }
     
 // document.getElementById("login").onclick = function(event){
-fetch('https://shsdata.blob.core.windows.net/moredata/test.txt')
+fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
 .then(response => {
     return response.text()
 })
