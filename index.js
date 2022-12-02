@@ -17,6 +17,10 @@ fetch('https://shsdata.blob.core.windows.net/moredata/test.txt')
 })
     .then(data => {
         stuff = data.split('\n')
-        row = stuff[0]
-        console.log(row)
+        for(i=0;i<stuff.length();i++){
+            if(i % 2 == 0){
+                console.log(stuff[0])
+            }
+        }
+        
     })
