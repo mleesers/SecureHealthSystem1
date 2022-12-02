@@ -12,8 +12,5 @@
     
 
 fetch('https://shsdata.blob.core.windows.net/moredata/test.txt')
-  .then(response => {
-    response.text()
-    console.log(response)
-})
-  
+  .then(response => response.text())
+  .then(text => console.log(text.split('')))
