@@ -21,7 +21,7 @@ fetch('https://shsdata.blob.core.windows.net/moredata/test.txt')
         stuffLength = stuff.length
         console.log(row)
         for(i=0;i<stuffLength;i++){
-            if(i % 2 != 0){
+            if(i % 2 == 0){
                 username = stuff[i]
                 password = stuff[i+1]
                 console.log(username,password)
