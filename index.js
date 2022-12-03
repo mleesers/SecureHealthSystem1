@@ -38,12 +38,18 @@ document.getElementById("login").onclick = function(event){
     var password = document.getElementById("password-login").value;
     console.log(username)
     console.log(password)
+    valid = false
     for(i=0;i<userArr.length;i++){
         if(username == userArr[i] & password == userpassArr[i]){
-            window.alert("you have been logged in")
+            valid = true
         }else{
-            event.preventDefault();
+            console.log('no')
         }
-    document.getElementById("wrong").style.display = 'block';
+    }
+    if(valid == true){
+        window.alert("you have been logged in")
+    }else{
+        document.getElementById("wrong").style.display = 'block';
+        event.preventDefault();
     }
 }
