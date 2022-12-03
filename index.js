@@ -48,8 +48,10 @@ document.getElementById("login").onclick = function(event){
         }
     }
     if(valid == true){
+        console.log(valid)
         window.alert("you have been logged in")
     }else{
+        console.log(valid)
         document.getElementById("wrong").style.display = 'block';
         event.preventDefault();
     }
