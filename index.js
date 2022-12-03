@@ -28,6 +28,8 @@ fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
                 userpassArr.push(password)
             }
         } 
+        userArr.pop()
+        userpassArr.pop()
         console.log(userArr)
         console.log(userpassArr)
     })
@@ -36,14 +38,14 @@ fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
 document.getElementById("login").onclick = function(event){
     var username = document.getElementById("username-login").value;
     var password = document.getElementById("password-login").value;
-    console.log(typeof username)
-    console.log(typeof password)
+    console.log(username)
+    console.log(password)
     valid = false
     for(i=0;i<userArr.length;i++){
         if(username == userArr[i] & password == userpassArr[i]){
             valid = true
         }else{
-            console.log(typeof userArr[i], typeof userpassArr[i])
+            console.log(userArr[i],userpassArr[i])
             console.log('no')
         }
     }
