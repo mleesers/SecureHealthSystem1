@@ -36,6 +36,8 @@ fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
 document.getElementById("login").onclick = function(event){
     var username = document.getElementById("username-login").value;
     var password = document.getElementById("password-login").value;
+    console.log(username)
+    console.log(password)
     for(i=0;i<userArr.length;i++){
         if(username == userArr[i] & password == userpassArr[i]){
             window.alert("you have been logged in")
