@@ -17,6 +17,7 @@ function doStuff(totalBalance,bankBalance){
     console.log(arr)
 }
 
+console.log(arr[0])
 
 totalBalance = arr[0]
 bankBalance = arr[1]
