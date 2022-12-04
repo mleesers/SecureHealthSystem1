@@ -18,4 +18,4 @@ totalBalance = arr[0]
 bankBalance = arr[1]
 console.log(totalBalance,bankBalance)
 
-export{totalBalance,bankBalance}
+
