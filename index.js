@@ -30,7 +30,7 @@ document.getElementById("login").onclick = function(event){
         if(username == userArr[i] & password == userpassArr[i]){
             valid = true
         }else{
-            console.log('no')
+            continue;
         }
     }
     if(valid == true){

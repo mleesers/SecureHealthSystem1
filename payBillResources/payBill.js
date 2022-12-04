@@ -1,7 +1,16 @@
-bankBalance = 1500
-totalBalance = 6000
+bankBalance = 0
+totalBalance = 0
+fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
+.then(response => {
+    return response.text()
+})
+.then(data => {
+    stuff = data.split('\n')
+    totalBalance = Number(stuff[0].trim())
+    bankBalance = Number(stuff[1].trim())
+})
 
-
+console.log(totalBalance,bankBalance)
 
 
 
