@@ -16,10 +16,6 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
 })
 totalBalance = arr[0]
 bankBalance = arr[1]
-export{totalBalance,bankBalance}
-
-
-
 console.log(totalBalance,bankBalance)
 
-
+export{totalBalance,bankBalance}
