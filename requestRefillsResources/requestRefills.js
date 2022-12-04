@@ -1,5 +1,17 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 document.getElementById("submit").onclick = function(){
 
     medication = document.getElementById('medication').textContent

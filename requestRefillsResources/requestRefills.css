@@ -82,7 +82,19 @@ img{
 .info > #name{
     font-size: 30px;
 }
+.info > #name1{
+    font-size: 30px;
+}
+.info > #name2{
+    font-size: 30px;
+}
 .info > #description{
+    font-size:20px;
+}
+.info > #description1{
+    font-size:20px;
+}
+.info > #description2{
     font-size:20px;
 }
 
