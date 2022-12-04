@@ -1,26 +1,27 @@
-userArr=['mleesers','cmolina','ssquarepants']
-userpassArr=['88723939Md','MakeupLover369','KrustyKrab123']
-// fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
-// .then(response => {
-//     return response.text()
-// })
-//     .then(data => {
-//         stuff = data.split('\n')
-//         stuffLength = stuff.length
-//         for(i=0;i<stuffLength;i++){
-//             if(i % 2 == 0){
-//                 username = stuff[i]
-//                 password = stuff[i+1]
-//                 userArr.push(username)
-//                 userpassArr.push(password)
-//             }
-//         } 
-//         userArr.pop()
-//         userpassArr.pop()
-//         console.log(userArr)
-//         console.log(userpassArr)
-//     })
-// }
+userArr=[]
+userpassArr=[]
+fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
+.then(response => {
+    return response.text()
+})
+    .then(data => {
+        stuff = data.split('\n')
+        stuffLength = stuff.length
+        for(i=0;i<stuffLength;i++){
+            if(i % 2 == 0){
+                username = stuff[i]
+                password = stuff[i+1]
+                username = username.trim()
+                password = password.trim();
+                userArr.push(username)
+                userpassArr.push(password)
+            }
+        } 
+        userArr.pop()
+        userpassArr.pop()
+        console.log(userArr)
+        console.log(userpassArr)
+    })
 
 document.getElementById("login").onclick = function(event){
     var username = document.getElementById("username-login").value;
