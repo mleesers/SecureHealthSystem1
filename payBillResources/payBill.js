@@ -1,5 +1,3 @@
-bankBalance = 0
-totalBalance = 0
 fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
 .then(response => {
     return response.text()
@@ -9,12 +7,15 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
     console.log(stuff)
     stuff[0] = stuff[0].trim()
     console.log(stuff[0])
-    totalBalance += Number(stuff[0])
-    bankBalance += Number(stuff[1])
+    totalBalance = Number(stuff[0])
+    bankBalance = Number(stuff[1])
+    calculate(totalBalance,bankBalance)
 })
 
-console.log(totalBalance,bankBalance)
 
+function calculate(totalBalance,bankBalance){
+    console.log(totalBalance,bankBalance)
+}
 
 
 document.getElementById("Submit").onclick = function(event){
