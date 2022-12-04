@@ -115,7 +115,7 @@ textarea{
     padding: 5px;
     font-size: 20px;
 }
-section {
+#refillRequest{
     display: none;
     display: flex;
     flex-direction: column;
