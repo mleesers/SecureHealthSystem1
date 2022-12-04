@@ -1,5 +1,4 @@
-balance = 0
-bank_balance = 0
+arr = []
 fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
 .then(response => {
     return response.text()
@@ -10,12 +9,7 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
     totalBalance = Number(stuff[0])
     bankBalance = Number(stuff[1])
     document.getElementById('balance').innerHTML = "$ " + totalBalance
-    doStuff(totalBalance,bankBalance)
+    arr.push(totalBalance,bankBalance)
 })
-function doStuff(totalBalance,bankBalance){
-    balance += totalBalance
-    bank_balance += bankBalance
-    console.log(balance,bank_balance)
-}
 
-console.log(balance,bank_balance)
+console.log(arr)
