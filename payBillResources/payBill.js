@@ -15,6 +15,7 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
     }
     
     arr.push(totalBalance,bankBalance)
+    console.log(arr)
 })
 
 
