@@ -8,11 +8,16 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
     stuff[0] = stuff[0].trim()
     totalBalance = Number(stuff[0])
     bankBalance = Number(stuff[1])
-    document.getElementById('balance').innerHTML = "$ " + totalBalance
+    if( document.getElementById('balance') !== null){
+        document.getElementById('balance').innerHTML = "$ " + totalBalance
+    }else{
+        console.log("does not exist")
+    }
+    
     arr.push(totalBalance,bankBalance)
 })
 
-console.log(arr)
+
 document.getElementById("Submit").onclick = function(event){
 
     Amount = document.getElementById("payamount").value
