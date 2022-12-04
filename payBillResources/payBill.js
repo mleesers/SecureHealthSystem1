@@ -13,3 +13,18 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
 })
 
 console.log(arr)
+document.getElementById("Submit").onclick = function(event){
+
+    Amount = document.getElementById("payamount").value
+    bankBalance = arr[1]
+    totalBalance = arr[0]
+    if(Amount <= bankBalance){
+        bankBalance -= Amount
+        totalBalance -= Amount
+        window.alert("Payment of $" + Amount + " was successfull. Your balance is now $" + totalBalance);
+    }else{
+        window.alert("The bank has declined this payment")
+        event.preventDefault();
+    }
+
+};
