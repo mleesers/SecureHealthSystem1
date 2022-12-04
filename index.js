@@ -10,7 +10,7 @@ fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
         for(i=0;i<stuffLength;i++){
             if(i % 2 == 0){
                 username = stuff[i]
-                password = stuff[i+1]]
+                password = stuff[i+1]
                 if(typeof username ==- 'string' & typeof password === 'string'){
                     username = username.replace(/^\s+\r+|\s+$/gm,'');
                     password = password.replace(/^\s+\r+|\s+$/gm,'');
