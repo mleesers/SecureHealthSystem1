@@ -11,9 +11,9 @@ fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
             if(i % 2 == 0){
                 username = stuff[i]
                 password = stuff[i+1]
-                if(typeof username ==- 'string' & typeof password === 'string'){
-                    username = username.trim();
-                    password = password.trim();
+                if(typeof username ==- 'string'){
+                    // username = username.trim();
+                    // password = password.trim();
                     userArr.push(username)
                     userpassArr.push(password)
             }
