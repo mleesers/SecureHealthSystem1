@@ -10,15 +10,18 @@ fetch('https://shsdata.blob.core.windows.net/moredata/users.txt')
         for(i=0;i<stuffLength;i++){
             if(i % 2 == 0){
                 username = stuff[i]
-                password = stuff[i+1]
-                username = username.replace(/^\s+\r+|\s+$/gm,'');
-                password = password.replace(/^\s+\r+|\s+$/gm,'');
-                userArr.push(username)
-                userpassArr.push(password)
+                password = stuff[i+1]]
+                if(typeof username ==- 'string' & typeof password === 'string'){
+                    username = username.replace(/^\s+\r+|\s+$/gm,'');
+                    password = password.replace(/^\s+\r+|\s+$/gm,'');
+                    userArr.push(username)
+                    userpassArr.push(password)
             }
+                }
+                
         } 
-        userArr.pop()
-        userpassArr.pop()
+        // userArr.pop()
+        // userpassArr.pop()
         console.log(userArr)
         console.log(userpassArr)
     })
