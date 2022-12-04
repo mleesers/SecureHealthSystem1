@@ -22,6 +22,12 @@ fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
             
     } 
 })
+document.getElementsByClassName('doctors').onclick = function(){
+
+    medication = document.getElementById('medication').textContent
+    window.alert("Your request to refill " + medication + " has been processed." )
+    
+};
 
 
 document.getElementById("submit").onclick = function(){
