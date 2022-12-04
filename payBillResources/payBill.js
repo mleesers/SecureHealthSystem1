@@ -1,4 +1,4 @@
-var bankBalance,totalBalance
+arr = []
 fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
 .then(response => {
     return response.text()
@@ -10,25 +10,16 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
     console.log(stuff[0])
     totalBalance = Number(stuff[0])
     bankBalance = Number(stuff[1])
+    arr.push(totalBalance,bankBalance)
+    document.getElementById('balance').innerHTML = "$ " + totalBalance
+    
 })
+totalBalance = arr[0]
+bankBalance = arr[1]
+export{totalBalance,bankBalance}
 
 
 
-document.getElementById('balance').innerHTML = "$ " + totalBalance
-document.getElementById("Submit").onclick = function(event){
-
-    Amount = document.getElementById("payamount").value
-
-    if(Amount <= bankBalance){
-        bankBalance -= Amount
-        totalBalance -= Amount
-        window.alert("Payment of $" + Amount + " was Successfull. Your balance is now $" + totalBalance);
-    }else{
-        window.alert("The bank has declined this payment")
-        event.preventDefault();
-    }
-
-};
 console.log(totalBalance,bankBalance)
 
 
