@@ -7,8 +7,10 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
 .then(data => {
     stuff = data.split('\n')
     console.log(stuff)
-    totalBalance = Number(stuff[0].trim())
-    bankBalance = Number(stuff[1].trim())
+    stuff[0] = stuff[0].trim()
+    console.log(stuff[0])
+    totalBalance += Number(stuff[0])
+    bankBalance += Number(stuff[1])
 })
 
 console.log(totalBalance,bankBalance)
