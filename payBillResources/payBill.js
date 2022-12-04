@@ -1,4 +1,5 @@
-arr = []
+balance = 0
+bank_balance = 0
 fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
 .then(response => {
     return response.text()
@@ -12,13 +13,9 @@ fetch('https://shsdata.blob.core.windows.net/moredata/bankInfo.txt')
     doStuff(totalBalance,bankBalance)
 })
 function doStuff(totalBalance,bankBalance){
-    arr.push(totalBalance)
-    arr.push(bankBalance)
-    console.log(arr)
+    balance += totalBalance
+    bank_balance += bankBalance
+    console.log(balance,bank_balance)
 }
 
-console.log(arr[0])
-
-totalBalance = arr[0]
-bankBalance = arr[1]
-console.log(totalBalance,bankBalance)
+console.log(balance,bank_balance)
