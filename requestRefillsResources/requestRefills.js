@@ -7,6 +7,7 @@ fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
 })
 .then(data => {
     stuff = data.split('\n')
+    console.log(stuff)
     stuffLength = stuff.length
     for(i=0;i<stuffLength;i++){
         if(i % 2 == 0){
