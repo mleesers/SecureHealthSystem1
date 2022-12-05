@@ -119,6 +119,7 @@ textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 40%;
     display: none;
 }
 
