@@ -28,9 +28,29 @@ fetch('https://shsdata.blob.core.windows.net/moredata/dates.txt')
 
 
 
+
 document.getElementById("date1").onclick = function(){
     datePage.style.display = 'none'
-    testResults.style.display = 'block'   
+    testResults.style.display = 'block' 
+    var result,test 
+    fetch('https://shsdata.blob.core.windows.net/moredata/test1.txt')
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        stuff = data.split('\n')
+        console.log(stuff)
+        stuffLength = stuff.length
+        test = stuff[0]
+        result = stuff[1]
+
+        test = test.trim
+        result = result.trim();
+
+        document.getElementById('test').innerHTML = test
+        document.getElementById('result').innerHTML = result
+    })
+    
 }
 document.getElementById("date2").onclick = function(){
     datePage.style.display = 'none'
