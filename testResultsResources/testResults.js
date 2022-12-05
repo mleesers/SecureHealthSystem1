@@ -19,10 +19,11 @@ fetch('https://shsdata.blob.core.windows.net/moredata/dates.txt')
             dates.push(date)
         }
     }
+    dates.pop()
     console.log(dates) 
-    // document.getElementById('name').innerHTML = medications[0]
-    // document.getElementById('name1').innerHTML = medications[1]
-    // document.getElementById('name2').innerHTML = medications[2]
+    document.getElementById('date').innerHTML = dates[0]
+    document.getElementById('date1').innerHTML = dates[1]
+    document.getElementById('date2').innerHTML = dates[2]
 })
 
 
