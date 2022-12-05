@@ -110,7 +110,7 @@ textarea{
     padding:10px;
     margin-bottom: 2rem;
 }
-#submit{
+#submit, #cancel{
     padding: 5px;
     font-size: 20px;
 }
