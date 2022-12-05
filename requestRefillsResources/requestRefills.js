@@ -23,7 +23,7 @@ fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
     console.log(medications)
     console.log(descriptions)   
 })
-document.getElementsByClassName('medication1').onclick = function(){
+document.getElementsById('medication1').onclick = function(){
 
     medication = medications[0]
     description = descriptions[0]
