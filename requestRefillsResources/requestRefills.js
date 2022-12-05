@@ -13,7 +13,7 @@ fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
         if(i % 2 == 0){
             medication = stuff[i]
             description = stuff[i+1]
-            if(typeof username === 'string' & typeof password === 'string'){
+            if(typeof medication === 'string' & typeof description === 'string'){
                 medication = medication.trim();
                 description = description.trim();
                 medications.push(medication)
@@ -24,7 +24,7 @@ fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
     console.log(medications)
     console.log(descriptions)   
 })
-document.getElementsById('medication1').onclick = function(){
+document.getElementById('medication1').onclick = function(){
 
     medication = medications[0]
     description = descriptions[0]
