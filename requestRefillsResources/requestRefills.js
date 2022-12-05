@@ -17,8 +17,10 @@ fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
                 description = description.trim();
                 medications.push(medication)
                 descriptions.push(description)
+             }
         }
-            }
+        console.log(medications)
+        console.log(descriptions)
             
     } 
 })
