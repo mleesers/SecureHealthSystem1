@@ -28,6 +28,9 @@ fetch('https://shsdata.blob.core.windows.net/moredata/dates.txt')
     // document.getElementById('name1').innerHTML = medications[1]
     // document.getElementById('name2').innerHTML = medications[2]
 })
+
+
+
 document.getElementById("date1").onclick = function(){
     datePage.style.display = 'none'
     testResults.style.display = 'block'   
