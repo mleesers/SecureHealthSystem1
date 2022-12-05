@@ -21,9 +21,9 @@ fetch('https://shsdata.blob.core.windows.net/moredata/dates.txt')
     }
     dates.pop()
     console.log(dates) 
-    document.getElementById('date').innerHTML = dates[0]
-    document.getElementById('date1').innerHTML = dates[1]
-    document.getElementById('date2').innerHTML = dates[2]
+    document.getElementById('date1').innerHTML = dates[0]
+    document.getElementById('date2').innerHTML = dates[1]
+    document.getElementById('date3').innerHTML = dates[2]
 })
 
 
