@@ -18,16 +18,20 @@ fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
                 medications.push(medication)
                 descriptions.push(description)
              }
-        }
-        console.log(medications)
-        console.log(descriptions)
-            
+        }   
     } 
+    console.log(medications)
+    console.log(descriptions)   
 })
-document.getElementsByClassName('doctors').onclick = function(){
+document.getElementsByClassName('medication1').onclick = function(){
 
-    medication = document.getElementById('medication').textContent
-    window.alert("Your request to refill " + medication + " has been processed." )
+    medication = medications[0]
+    description = descriptions[0]
+    document.getElementById('cards').style.display = 'none'
+    document.getElementById('refillRequest').style.display = 'block'
+    document.getElementById('medication').innerHTML = medication
+    document.getElementById('description').innerHTML = description
+    //window.alert("Your request to refill " + medication + " has been processed." )
     
 };
 
