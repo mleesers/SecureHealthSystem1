@@ -40,7 +40,6 @@ document.getElementById("date1").onclick = function(){
     .then(data => {
         stuff = data.split('\n')
         console.log(stuff)
-        stuffLength = stuff.length
         test = stuff[0]
         result = stuff[1]
 
