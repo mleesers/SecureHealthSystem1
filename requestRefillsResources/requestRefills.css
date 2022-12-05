@@ -73,7 +73,6 @@ a {
 img{
     width:12rem;
     height:10rem;
-    margin-right:3rem;
 }
 .info{
     display: flex;
@@ -129,7 +128,7 @@ textarea{
     width:25rem;
     justify-content: center;  
     font-size: 25px;
-
+    margin: inherit;
 }
 .card {
     margin-top: 8%;
