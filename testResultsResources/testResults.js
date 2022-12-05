@@ -43,7 +43,7 @@ document.getElementById("date1").onclick = function(){
         test = stuff[0]
         result = stuff[1]
 
-        test = test.trim
+        test = test.trim();
         result = result.trim();
 
         document.getElementById('test').innerHTML = test
