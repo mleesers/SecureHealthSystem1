@@ -1,6 +1,6 @@
 medications = []
 descriptions = []
-
+var medication
 fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
 .then(response => {
     return response.text()
@@ -34,14 +34,34 @@ document.getElementById('medication1').onclick = function(){
     document.getElementById('refillRequest').style.display = 'block'
     document.getElementById('medication').innerHTML = medication
     document.getElementById('description').innerHTML = description
-    //window.alert("Your request to refill " + medication + " has been processed." )
+    
+};
+document.getElementById('medication2').onclick = function(){
+
+    medication = medications[1]
+    description = descriptions[1]
+    document.getElementById('title').style.display = 'none'
+    document.getElementById('cards').style.display = 'none'
+    document.getElementById('refillRequest').style.display = 'block'
+    document.getElementById('medication').innerHTML = medication
+    document.getElementById('description').innerHTML = description
+    
+};
+document.getElementById('medication3').onclick = function(){
+
+    medication = medications[2]
+    description = descriptions[2]
+    document.getElementById('title').style.display = 'none'
+    document.getElementById('cards').style.display = 'none'
+    document.getElementById('refillRequest').style.display = 'block'
+    document.getElementById('medication').innerHTML = medication
+    document.getElementById('description').innerHTML = description
     
 };
 
 
 document.getElementById("submit").onclick = function(){
 
-    medication = document.getElementById('medication').textContent
     window.alert("Your request to refill " + medication + " has been processed." )
     
 };
