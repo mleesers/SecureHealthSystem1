@@ -12,18 +12,13 @@ fetch('https://shsdata.blob.core.windows.net/moredata/dates.txt')
     stuff = data.split('\n')
     console.log(stuff)
     stuffLength = stuff.length
-    // for(i=0;i<stuffLength;i++){
-    //     if(i % 2 == 0){
-    //         medication = stuff[i]
-    //         description = stuff[i+1]
-    //         if(typeof medication === 'string' & typeof description === 'string'){
-    //             medication = medication.trim();
-    //             description = description.trim();
-    //             medications.push(medication)
-    //             descriptions.push(description)
-    //          }
-    //     }   
-    // } 
+    for(i=0;i<stuffLength;i++){
+        date = stuff[i]
+        if(typeof date === 'string'){
+            date = date.trim();
+            dates.push(date)
+        }
+    } 
     // document.getElementById('name').innerHTML = medications[0]
     // document.getElementById('name1').innerHTML = medications[1]
     // document.getElementById('name2').innerHTML = medications[2]
