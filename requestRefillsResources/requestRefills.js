@@ -21,9 +21,9 @@ fetch('https://shsdata.blob.core.windows.net/moredata/medications.txt')
              }
         }   
     } 
-    document.getElementById('name').innerHTML = medication[0]
-    document.getElementById('name1').innerHTML = medication[1]
-    document.getElementById('name2').innerHTML = medication[2]
+    document.getElementById('name').innerHTML = medications[0]
+    document.getElementById('name1').innerHTML = medications[1]
+    document.getElementById('name2').innerHTML = medications[2]
 })
 document.getElementById('medication1').onclick = function(){
 
