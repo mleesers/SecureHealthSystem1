@@ -28,6 +28,7 @@ document.getElementById('medication1').onclick = function(){
 
     medication = medications[0]
     description = descriptions[0]
+    document.getElementById('title').style.display = 'none'
     document.getElementById('cards').style.display = 'none'
     document.getElementById('refillRequest').style.display = 'block'
     document.getElementById('medication').innerHTML = medication
