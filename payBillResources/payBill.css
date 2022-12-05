@@ -110,7 +110,7 @@ button{
     width:25rem;
     align-items: flex-start;
 }
-input[type=text] {
+input[type=text], input[type=password]{
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
