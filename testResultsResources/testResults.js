@@ -18,7 +18,8 @@ fetch('https://shsdata.blob.core.windows.net/moredata/dates.txt')
             date = date.trim();
             dates.push(date)
         }
-    } 
+    }
+    console.log(dates) 
     // document.getElementById('name').innerHTML = medications[0]
     // document.getElementById('name1').innerHTML = medications[1]
     // document.getElementById('name2').innerHTML = medications[2]
